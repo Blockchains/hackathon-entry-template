@@ -1,0 +1,65 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Blockchains/.github/main/docs/blocks.schema.json",
+  "schema_version": "1.0",
+  "name": "hackathon-entry-template",
+  "repo": "Blockchains/hackathon-entry-template",
+  "summary": "Generic hackathon entry template: README skeleton (problem, solution, architecture, what was built), docs/SUBMISSION.md checklist, .env.example, and CI that scans for secrets and auto-detects Node, Python or Foundry to build and test.",
+  "kind": [
+    "template"
+  ],
+  "stability": "stable",
+  "license": "MIT",
+  "entrypoints": [
+    {
+      "type": "git",
+      "name": "Use this template",
+      "ref": "https://github.com/new?template_name=hackathon-entry-template&template_owner=Blockchains",
+      "usage": "GitHub template"
+    },
+    {
+      "type": "file",
+      "name": ".github/workflows/ci.yml",
+      "ref": ".github/workflows/ci.yml",
+      "usage": "gitleaks + auto-detected build/test (package.json, requirements.txt/pyproject.toml, foundry.toml)"
+    }
+  ],
+  "inputs": [
+    {
+      "name": "your code",
+      "type": "src/"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "entry repo with CI",
+      "type": "repo"
+    }
+  ],
+  "deps": [
+    "git"
+  ],
+  "compatible_with": [
+    {
+      "repo": "Blockchains/hackathons",
+      "how": "link the tracker issue in the README header"
+    },
+    {
+      "repo": "Blockchains/blockchainlab-starters",
+      "how": "start the code from a starter"
+    },
+    {
+      "repo": "Blockchains/grokhack-submissions",
+      "how": "Grok Hack specific template"
+    }
+  ],
+  "tests": {
+    "command": "see .github/workflows/ci.yml: gitleaks, then npm test / pytest / forge build && forge test, auto-detected",
+    "ci": ".github/workflows/ci.yml",
+    "network": false
+  },
+  "docs": {
+    "readme": "README.md",
+    "agents": "AGENTS.md",
+    "llms": "llms.txt"
+  }
+}

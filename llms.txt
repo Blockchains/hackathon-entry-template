@@ -1,0 +1,23 @@
+# hackathon-entry-template
+
+> Generic hackathon entry template: README skeleton (problem, solution, architecture, what was built), docs/SUBMISSION.md checklist, .env.example, and CI that scans for secrets and auto-detects Node, Python or Foundry to build and test.
+
+## Docs
+
+- [README](https://raw.githubusercontent.com/Blockchains/hackathon-entry-template/main/README.md): overview, install and the 'Use as a building block' section
+- [AGENTS.md](https://raw.githubusercontent.com/Blockchains/hackathon-entry-template/main/AGENTS.md): setup, build/test commands, structure map, conventions and rules for AI coding agents
+- [blocks.json](https://raw.githubusercontent.com/Blockchains/hackathon-entry-template/main/blocks.json): machine-readable building-block manifest (entrypoints, inputs, outputs, deps, compatible blocks)
+
+## Key files
+
+- [README.md](https://github.com/Blockchains/hackathon-entry-template/blob/main/README.md): skeleton
+- [docs/SUBMISSION.md](https://github.com/Blockchains/hackathon-entry-template/blob/main/docs/SUBMISSION.md): checklist
+- [.github/workflows/ci.yml](https://github.com/Blockchains/hackathon-entry-template/blob/main/.github/workflows/ci.yml): CI
+
+## Related
+
+- [Build with Blocks](https://github.com/Blockchains/.github/blob/main/docs/BUILD-WITH-BLOCKS.md): how to assemble projects from Blockchains repos
+- [Org llms.txt](https://blockchains.github.io/llms.txt) · [blocks catalogue](https://blockchains.github.io/blocks.json)
+- [Blockchains/hackathons](https://github.com/Blockchains/hackathons): link the tracker issue in the README header
+- [Blockchains/blockchainlab-starters](https://github.com/Blockchains/blockchainlab-starters): start the code from a starter
+- [Blockchains/grokhack-submissions](https://github.com/Blockchains/grokhack-submissions): Grok Hack specific template
